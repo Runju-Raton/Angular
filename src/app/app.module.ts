@@ -9,9 +9,11 @@ import { UsersComponent } from './users/users.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserComponent } from './user/user.component';
 
 const routes:Routes=[
   {path:'users',component:UsersComponent},
+  {path:'user/:id',component:UserComponent},
   {path:'contact',component:ContactComponent},
   {path:'about',component:AboutComponent},
   // {path:'**',component:UsersComponent},
@@ -22,7 +24,8 @@ const routes:Routes=[
     AppComponent,
     UsersComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
